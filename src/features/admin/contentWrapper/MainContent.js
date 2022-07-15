@@ -1,3 +1,4 @@
+import DashbordTotalUsesDetailsCard from '../../../pages/helper/dashbordTotalUsesDetailsCard'
 import Footer from '../footer/Footer'
 import SideBar from '../sidenav/SideBar'
 import TopBar from '../topbar/TopBar'
@@ -17,7 +18,11 @@ function MainContentDashbord() {
                     <TopBar />
                     {/* <!-- End of Topbar --> */}
 
-                    <PageContent />
+                    {/* <PageContent /> */}
+
+                    {/*total user details  */}
+                    <DashbordTotalUsesDetailsCard />
+
                     {/* <!-- /.container-fluid --> */}
 
                 </div>

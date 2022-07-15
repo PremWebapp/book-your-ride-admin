@@ -16,6 +16,7 @@ import RestroDetailManagement from '../features/admin/restaurant/pages/RestroDet
 import RestaurantManagement from '../features/admin/restaurant/RestaurantManagement'
 import UserManagement from '../features/admin/user/UserManagement'
 import UserMap from '../features/admin/user/UserMap'
+import Setting from '../pages/setting'
 
 export default function MainContent() {
   return (
@@ -37,6 +38,7 @@ export default function MainContent() {
           <Route exact path="/Promo/Promotion" element={< PromotionPage/>} />
           <Route exact path="/Order" element={< OrderManagement/>} />
           <Route exact path="/Payment" element={< PaymentManagement/>} />
+          <Route exact path="/setting" element={< Setting/>} />
 
         </Routes>
     </div>
