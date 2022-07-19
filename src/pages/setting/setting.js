@@ -1,11 +1,13 @@
 import React from 'react'
-import TopBar from '../features/admin/topbar/TopBar'
-import SettingCard from './helper/settingCard'
+import SettingCard from '../dashbord/helper/settingCard'
 
 function Setting() {
     return (
         <>
-            <TopBar />
+         <div id="content-wrapper" className="d-flex flex-column">
+
+{/* <!-- Main Content --> */}
+<div id="content">
             <div className="px-4">
                 <div className="py-4">
                     <h4 className="px-5">SETTING</h4>
@@ -18,6 +20,8 @@ function Setting() {
                    <SettingCard/>
                    <SettingCard/>
                 </div>
+            </div>
+            </div>
             </div>
         </>
     )

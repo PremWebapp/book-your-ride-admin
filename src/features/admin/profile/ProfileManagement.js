@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../footer/Footer';
-import SideNav from '../sidenav/SideNav';
+import Footer from '../../../compnent/footer/Footer';
+import SideNav from '../../../compnent/sidenav/SideNav';
 import TopBar from '../topbar/TopBar';
 import ProfileContent from './ProfileContent';
 

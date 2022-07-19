@@ -1,6 +1,6 @@
 import React from 'react';
 import DriverPage from './DriverPage';
-import Footer from '../footer/Footer'
+import Footer from '../../../compnent/footer/Footer'
 import Topbar from '../topbar/TopBar'
 
 function DriverContent() {

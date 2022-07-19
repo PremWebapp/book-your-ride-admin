@@ -72,7 +72,8 @@ label{
 }
 
 .maincontent-left{
-    margin-left: auto;
+    margin-left:20vw ;
+
     /* margin-right: auto; */
     width: 80vw;
 }
@@ -84,4 +85,27 @@ label{
     position: fixed !important ;
     height: 100vh !important ;
     overflow: auto !important ;
+}
+body{
+    background-color: #f0f2f5 !important;
+}
+.ant-modal-content{
+    border-radius: 25px !important;
+}
+.ant-modal-footer{
+    border-top: 1px solid #ffff !important;
+        text-align: left !important;
+        padding-left:45px !important;
+        padding-right:45px !important;
+}
+
+.ant-btn-primary{
+    float: right !important;
+}
+
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab {
+    width: 20vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    border: 1px solid #f5dbdb !important;
 }

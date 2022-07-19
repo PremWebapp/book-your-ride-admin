@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import SushiyaLogoDark from '../img/sushiya_logo_dark.png'
 
 function SideNav() {
     return (
@@ -8,17 +7,15 @@ function SideNav() {
             <ul className="navbar-nav bg-gradient-primary sidebar sidebarStyle sidebar-dark accordion" id="accordionSidebar" >
 
                 {/* <!-- Sidebar - Brand --> */}
-                {/* <NavLink className="sidebar-brand d-flex align-items-center justify-content-center" to="/Admin">
-                    <div className="sidebar-brand-icon rotate-n-15">
-                        <i className="fas fa-laugh-wink"></i>
-                    </div>
+                 <NavLink className="sidebar-brand d-flex align-items-center justify-content-center" to="/Admin">
+                   
                     <div className="sidebar-brand-text mx-3">Admin <sup></sup></div>
-                </NavLink> */}
+                </NavLink> 
 
                 <div className="logo text-center mb-4">
                     <NavLink to="#" className="navbar-brand text-center">
                         <img
-                            src={SushiyaLogoDark}
+                            // src={SushiyaLogoDark}
                             alt=""
                             width="100"
                             height="84"

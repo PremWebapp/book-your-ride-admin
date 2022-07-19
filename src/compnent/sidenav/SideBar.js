@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Layout, Menu } from "antd";
-import SushiyaLogoDark from '../img/sushiya_logo_dark.png'
+// import SushiyaLogoDark from '../../img/sushiya_logo_dark.png'
 import styles from './Sidebar.module.css'
-import {  AiOutlineAreaChart ,AiFillSetting, AiFillCar} from "react-icons/ai";
-import { BsSpeedometer } from "react-icons/bs";
-import { FaMotorcycle,FaGlobeAmericas,FaUsers,FaUnlock,FaCreditCard,FaBell,FaSubway,FaFileCode,FaStarHalfAlt ,FaUtensils,FaPercent,FaMoneyBillAlt,FaShoppingCart,FaArrowsAlt} from "react-icons/fa";
+import { AiOutlineAreaChart, AiFillSetting, AiFillCar } from "react-icons/ai";
+import { FiMonitor } from "react-icons/fi";
+import { FaUsers,FaBell, FaFileCode, FaStarHalfAlt,FaMoneyBillAlt, FaShoppingCart } from "react-icons/fa";
 // 
 
 import { Link } from "react-router-dom";
@@ -20,57 +20,53 @@ function SideBar() {
         style={{
           overflow: "auto",
           height: "100vh",
-          position:"fixed"
+          position: "fixed"
         }}
       >
-        <div className="logo text-center mb-5">
-          <Link to="#" className="navbar-brand text-center">
-            <img
-              src={SushiyaLogoDark}
-              alt=""
-              width="100"
-              height="84"
-              className="d-inline-block align-text-top"
-            />
-          </Link>
+        <div className="logo mt-3 mb-4 " style={{    borderBottom: '2px solid #000'}}>
+          <NavLink className="sidebar-brand d-flex align-items-left justify-content-left" to="/Admin">
+
+            <div className="sidebar-brand-text mx-5  "><h6 className="font-weight-bold">Admin's Name </h6>
+            </div>
+          </NavLink>
         </div>
 
         <Menu mode="inline">
-          <Menu.Item className={styles.paddingLeft} key="1" icon={<BsSpeedometer size={20}/>}>
-            <Link  to="/Admin"> Dashboard </Link>
+          <Menu.Item className={styles.paddingLeft} key="1" icon={<FiMonitor size={20} />}>
+            <Link to="/Admin"> Dashboard </Link>
           </Menu.Item>
-         
+
           <Menu.Item className={styles.paddingLeft} key="2" icon={<FaUsers size={20} />}>
             <Link to="/Admin/User"> User Management </Link>
           </Menu.Item>
           <Menu.Item className={styles.paddingLeft} key="3" icon={<AiOutlineAreaChart size={20} />}>
-            <NavLink to="/Admin/Restaurant">Service Provider</NavLink>
+            <NavLink to="/Admin/service">Service Provider</NavLink>
           </Menu.Item>
           {/* <Menu.Item className={styles.paddingLeft} key="4" icon={<FaMotorcycle size={20}/>}>
             <NavLink to="/Admin/Driver"></NavLink>
           </Menu.Item> */}
-          <Menu.Item className={styles.paddingLeft} key="4" icon={<AiFillCar size={20}/>}>
-            <NavLink to="/Admin/Category">Vehicle Management</NavLink>
+          <Menu.Item className={styles.paddingLeft} key="4" icon={<AiFillCar size={20} />}>
+            <NavLink to="/Admin/vahicle">Vehicle Management</NavLink>
           </Menu.Item>
-          <Menu.Item className={styles.paddingLeft} key="5" icon={<FaShoppingCart size={20}/>}>
-            <NavLink to="/Admin/Order">Booking Management</NavLink>
+          <Menu.Item className={styles.paddingLeft} key="5" icon={<FaShoppingCart size={20} />}>
+            <NavLink to="/Admin/booking">Booking Management</NavLink>
           </Menu.Item>
-          <Menu.Item  className={styles.paddingLeft} key="6" icon={<FaMoneyBillAlt size={20}/>}>
+          <Menu.Item className={styles.paddingLeft} key="6" icon={<FaMoneyBillAlt size={20} />}>
             <NavLink to="/Admin/Payment"> Payment Management </NavLink>
           </Menu.Item>
-          <Menu.Item className={styles.paddingLeft} key="7" icon={<FaStarHalfAlt size={20}/>}>
-            <NavLink to="/charts.html">Rating & Review Management</NavLink>
+          <Menu.Item className={styles.paddingLeft} key="7" icon={<FaStarHalfAlt size={20} />}>
+            <NavLink to="/Admin/rating">Rating & Review Management</NavLink>
           </Menu.Item>
-          <Menu.Item className={styles.paddingLeft} key="8" icon={<FaFileCode size={20}/>}>
-            <NavLink to="/charts.html">Report Management</NavLink>
+          <Menu.Item className={styles.paddingLeft} key="8" icon={<FaFileCode size={20} />}>
+            <NavLink to="/Admin/report">Report Management</NavLink>
           </Menu.Item>
-          <Menu.Item className={styles.paddingLeft} key="9" icon={<FaBell size={20}/>}>
-            <NavLink to="/charts.html">Notifications Management</NavLink>
+          <Menu.Item className={styles.paddingLeft} key="9" icon={<FaBell size={20} />}>
+            <NavLink to="/Admin/notification">Notifications Management</NavLink>
           </Menu.Item>
-          <Menu.Item className={styles.paddingLeft} key="10" icon={<AiFillSetting size={20}/>}>
+          <Menu.Item className={styles.paddingLeft} key="10" icon={<AiFillSetting size={20} />}>
             <NavLink to="/Admin/setting">Setting</NavLink>
           </Menu.Item>
- {/* <Menu.Item className={styles.paddingLeft}  key="2" icon={<FaGlobeAmericas  size={20}/>}>
+          {/* <Menu.Item className={styles.paddingLeft}  key="2" icon={<FaGlobeAmericas  size={20}/>}>
             <Link to="/Admin/countryCity"> Country & City Management </Link>
           </Menu.Item> */}
           {/* <Menu.Item className={styles.paddingLeft} key="9" icon={<FaMoneyBillAlt size={20}/>}>
@@ -97,7 +93,7 @@ function SideBar() {
           <Menu.Item className={styles.paddingLeft} key="18" icon={<FaUnlock size={20}/>}>
             <NavLink to="/charts.html">Sub Admin</NavLink>
           </Menu.Item> */}
-        
+
         </Menu>
       </Sider>
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import SideNav from '../sidenav/SideNav';
+import SideNav from '../../../compnent/sidenav/SideNav';
 import DriverContent from './DriverContent';
 
 

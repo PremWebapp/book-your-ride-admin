@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from '../footer/Footer'
-import TopBar from '../topbar/TopBar'
-import UserPage from './UserPage'
+import UserPage from '../../../pages/user/UserPage'
 
 function UserContent() {
     return (
@@ -12,8 +10,6 @@ function UserContent() {
                 {/* <!-- Main Content --> */}
                 <div id="content">
 
-                    {/* <!-- Topbar --> */}
-                    <TopBar />
                     {/* <!-- End of Topbar --> */}
 
                     <UserPage />
@@ -23,7 +19,6 @@ function UserContent() {
 
 
                 {/* <!-- End of Main Content --> */}
-                <Footer />
 
             </div>
             {/* <!-- End of Content Wrapper --> */}

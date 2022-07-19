@@ -4,8 +4,6 @@ import '../../vendor/fontawesome-free/css/all.css';
 import '../../css/sb-admin-2.css';
 import SideBar from './sidenav/SideBar';
 
-
-
 function DashboardAdmin() {
     return (
         <>

@@ -3,8 +3,8 @@ import { TiGroup } from "react-icons/ti";
 import { AiFillCar } from "react-icons/ai";
 function DashbordTotalUsesDetailsCard() {
     return (
-        <div className='py-5'>
-            <div class=" mx-4 bg-white card shadow border-dark">
+        <div className='pt-5'>
+            <div class=" mx-4  py-4 bg-white card shadow ">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col text-center">
                         <div class="card-body mx-5">
@@ -28,8 +28,6 @@ function DashbordTotalUsesDetailsCard() {
                     </div>
 
                 </div>
-
-
 
             </div>
         </div>

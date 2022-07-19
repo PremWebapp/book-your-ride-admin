@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../footer/Footer'
+import Footer from '../../../compnent/footer/Footer'
 import TopBar from '../topbar/TopBar'
-import PaymentPage from './PaymentPage'
+import PaymentPage from '../../../pages/booking/PaymentPage'
 
 function PaymentContent() {
   return (
@@ -14,8 +14,6 @@ function PaymentContent() {
                 <div id="content">
 
                     {/* <!-- Topbar --> */}
-                    <TopBar />
-                    {/* <!-- End of Topbar --> */}
 
                     <PaymentPage />
                     {/* <!-- /.container-fluid --> */}

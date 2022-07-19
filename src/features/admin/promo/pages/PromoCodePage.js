@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Footer from '../../footer/Footer'
-import SideNav from '../../sidenav/SideNav'
+import Footer from '../../../../compnent/footer/Footer'
+import SideNav from '../../../../compnent/sidenav/SideNav'
 import TopBar from '../../topbar/TopBar'
 import { DoubleRightOutlined, StepBackwardOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';

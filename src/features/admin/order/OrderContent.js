@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../footer/Footer'
+import Footer from '../../../compnent/footer/Footer'
 import TopBar from '../topbar/TopBar'
 import OrderPage from './OrderPage'
 
@@ -13,7 +13,6 @@ function OrderContent() {
         <div id="content">
 
           {/* <!-- Topbar --> */}
-          <TopBar />
           {/* <!-- End of Topbar --> */}
 
           <OrderPage />

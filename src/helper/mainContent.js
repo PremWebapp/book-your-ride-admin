@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import CategoryManagement from '../features/admin/category/CategoryManagement'
-import MainContentDashbord from '../features/admin/contentWrapper/MainContent'
+import MainContentDashbord from '../pages/dashbord/MainContent'
 import CountryCityManagement from '../features/admin/countryCity/CountryCityManagement'
 import DishManagement from '../features/admin/dish/DishManagement'
 import DriverManagement from '../features/admin/driver/DriverManagement'
@@ -16,16 +16,32 @@ import RestroDetailManagement from '../features/admin/restaurant/pages/RestroDet
 import RestaurantManagement from '../features/admin/restaurant/RestaurantManagement'
 import UserManagement from '../features/admin/user/UserManagement'
 import UserMap from '../features/admin/user/UserMap'
-import Setting from '../pages/setting'
+import Header from '../compnent/header/header'
+import Footer from '../compnent/footer/Footer'
+import ServicePage from '../pages/service/servicepage'
+import Setting from '../pages/setting/setting'
+import VahiclePage from '../pages/vahicle/vahicle'
+import UserManagementView from '../pages/user/userManagementView'
+import VahicleView from '../pages/vahicle/vahicleView'
+import BookingView from '../pages/booking/bookingView'
+import ReatingPage from '../pages/rating/ratingPage'
+import RatingView from '../pages/rating/ratingView'
+import ReportPage from '../pages/report/reportPage'
+import NotificationPage from '../pages/notification/notificationPage'
 
 export default function MainContent() {
   return (
     <div>
+      <Header/>
         <Routes>
           <Route exact path="/" element={< MainContentDashbord/>} />
-          <Route exact path="/Category" element={< CategoryManagement/>} />
-          <Route exact path="/countryCity" element={< CountryCityManagement/>} />
           <Route exact path="/User" element={< UserManagement/>} />
+          <Route exact path="/user-management" element={< UserManagementView />} />
+          <Route exact path="/Category" element={< CategoryManagement/>} />
+          <Route exact path="/service" element={< ServicePage/>} />
+          <Route exact path="/vahicle" element={< VahiclePage />} />
+          <Route exact path="/vahicle-view" element={< VahicleView />} />
+          <Route exact path="/countryCity" element={< CountryCityManagement/>} />
           <Route exact path="/Restaurant" element={< RestaurantManagement/>} />
           <Route exact path="/restroDetail/:id" element={< RestroDetailManagement/>} />
           <Route exact path="/userMap" element={< UserMap/>} />
@@ -36,11 +52,16 @@ export default function MainContent() {
           <Route exact path="/Promo" element={< PromoManagement/>} />
           <Route exact path="/Promo/Code" element={< PromoCodePage/>} />
           <Route exact path="/Promo/Promotion" element={< PromotionPage/>} />
-          <Route exact path="/Order" element={< OrderManagement/>} />
+          <Route exact path="/booking" element={< OrderManagement/>} />
+          <Route exact path="/booking-view" element={< BookingView/>} />
           <Route exact path="/Payment" element={< PaymentManagement/>} />
           <Route exact path="/setting" element={< Setting/>} />
-
+          <Route exact path="/rating" element={< ReatingPage />} />
+          <Route exact path="/rating-view" element={< RatingView />} />
+          <Route exact path="/report" element={< ReportPage />} />
+          <Route exact path="/notification" element={< NotificationPage />} />
         </Routes>
+        {/* <Footer/> */}
     </div>
   )
 }

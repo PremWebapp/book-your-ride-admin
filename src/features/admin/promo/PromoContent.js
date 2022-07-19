@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../footer/Footer'
+import Footer from '../../../compnent/footer/Footer'
 import TopBar from '../topbar/TopBar'
 import PromoPage from './PromoPage'
 

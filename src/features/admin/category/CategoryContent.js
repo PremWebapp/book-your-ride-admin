@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../footer/Footer'
+import Footer from '../../../compnent/footer/Footer'
 import TopBar from '../topbar/TopBar'
 import CategoryPage from './CategoryPage'
 
@@ -12,18 +12,11 @@ function CategoryContent() {
                 {/* <!-- Main Content --> */}
                 <div id="content">
 
-                    {/* <!-- Topbar --> */}
-                    <TopBar />
-                    {/* <!-- End of Topbar --> */}
 
                     <CategoryPage />
                     {/* <!-- /.container-fluid --> */}
 
                 </div>
-
-
-                {/* <!-- End of Main Content --> */}
-                <Footer />
 
             </div>
             {/* <!-- End of Content Wrapper --> */}
