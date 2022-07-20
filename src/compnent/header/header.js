@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <nav class="navbar navbar-expand-lg bg-white ">
+        <nav class="navbar navbar-expand-lg bg-white border-bottom ">
             <div class="container-fluid py-2">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

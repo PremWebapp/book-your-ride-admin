@@ -45,8 +45,8 @@ function ProfilePage() {
                                 </div>
                                 <div className='card-footer'>
                                     <div className='col-md-12  text-center'>
-                                        <Link to='/Admin/profile-edit' className='btn btn-outline-warning mr-3'>Edit Profile</Link>
-                                        <Link to='/Admin/profile-reset' className='btn btn-outline-warning'>Change Password</Link>
+                                        <Link to='/Admin/profile-edit' className='btn btn-outline-danger mr-3'>Edit Profile</Link>
+                                        <Link to='/Admin/profile-reset' className='btn btn-outline-danger'>Change Password</Link>
                                     </div>
                                 </div>
                             </div>

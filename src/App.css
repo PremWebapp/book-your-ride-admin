@@ -31,7 +31,7 @@ label{
   }
 
 .ant-tabs-tab-active{
-    background-color: orange !important;
+    background-color: rgb(218, 52, 52) !important;
 }
 
 .ant-tabs-tab-active .ant-tabs-tab-btn{
@@ -53,22 +53,22 @@ label{
 }
 
 .ant-menu-item-selected a, .ant-menu-item-selected a:hover {
-    color: #d111cb73!important;
+    color: #fa3503!important;
 }
 .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
-    border-right:3px solid #d111cb73!important;
+    border-right:3px solid #e0341d!important;
 }
 .ant-menu-item-selected {
-    color: #d111cb73!important;
+    color: #fa0909!important;
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #fffee3!important;
+    background-color: #ddbfbf!important;
 }
 .ant-menu-item a:hover,.ant-menu-item-icon:hover{
-    color: #d111cb73!important;
+    color: #ff0000!important;
 }
 .ant-menu-light .ant-menu-item:hover , .ant-menu-light .ant-menu-item-active{
-    color: #d111cb73!important;
+    color: #fa3503!important;
 }
 
 .maincontent-left{

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './App.css';
-import './vendor/fontawesome-free/css/all.css';
 import './css/sb-admin-2.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './features/admin/authentication/login';
