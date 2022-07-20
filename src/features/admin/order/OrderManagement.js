@@ -1,5 +1,5 @@
 import React from 'react'
-import OrderContent from './OrderContent'
+import OrderContent from '../../../pages/booking/OrderContent'
 
 function OrderManagement() {return <OrderContent />}
 

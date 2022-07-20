@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../../../compnent/footer/Footer'
 import TopBar from '../topbar/TopBar'
-import PaymentPage from '../../../pages/booking/PaymentPage'
+import PaymentPage from '../../../pages/payment/PaymentPage'
 
 function PaymentContent() {
   return (

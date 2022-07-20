@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from 'react'
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-function RatingView() {
+function PaymentView() {
     let navigate = useNavigate();
-
-    // For Category Auto Generate Id 
 
     return (
         <>
-           <div id="content-wrapper" className="d-flex flex-column py-3">
+            <div id="content-wrapper" className="d-flex flex-column py-3">
                 <div id="content">
                     <div className='container-fluid'>
                         <div className='row '>
                             <div className='col-md-12 ' >
                                 <div class="card">
-                                    <div className='card-header bold' onClick={() => navigate(-1)}><span className="px-2"><MdOutlineArrowBackIos /></span>View Rating Details</div>
+                                    <div className='card-header bold' onClick={() => navigate(-1)}><span className="px-2"><MdOutlineArrowBackIos /></span>View Payment Details</div>
                                     <div class="card-body">
                                         <div className='col-md-12 text-center'>
                                             <img alt="profile_image" src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' width={'30%'} />
@@ -48,4 +45,4 @@ function RatingView() {
     )
 }
 
-export default RatingView
+export default PaymentView

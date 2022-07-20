@@ -10,79 +10,58 @@ function VahicleView() {
 
     return (
         <>
-            <div className="container-fluid ">
-                {/* USER MANAGEMENT VIEW card start */}
-                <div className="pt-4">
-                    <h5 className=" font-weight-bold"><button className="pr-3 border-0" onClick={() => navigate(-1)}><MdOutlineArrowBackIos /></button >  View Vehicle Details</h5>
-                </div>
+            <div id="content-wrapper" className="d-flex flex-column py-3">
+            <div id="content">
+                <div className='container-fluid'>
+                    <div className='row '>
+                        <div className='col-md-12 ' >
+                            <div class="card">
+                                <div className='card-header bold' onClick={() => navigate(-1)}><span className="px-2"><MdOutlineArrowBackIos /></span>View Vehicle Details</div>
 
-                <div className="card">
-                    <div className="pt-3">
-                        <div className="d-flex justify-content-center py-2 ">
-
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body d-flex justify-content-center">
-                                            <img className='  ' width={100} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/User_icon-cp.svg/1200px-User_icon-cp.svg.png' />
-                                        </div>
+                                <div class="card-body">
+                                    <div className='col-md-12 text-center'>
+                                        <img alt="profile_image" src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' width={'30%'} />
                                     </div>
                                 </div>
 
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body d-flex justify-content-center">
-                                            <img className=' ' width={150} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/User_icon-cp.svg/1200px-User_icon-cp.svg.png' />
-                                        </div>
-                                    </div>
+                                <div class="card-body">
+                                    <table className='table'>
+                                        <tbody>
+                                            <tr>
+                                                <th>Vehicle Name</th>
+                                                <td><input type="text" readOnly="true" className='form-control' /></td>
+                                                <th>Car Brand</th>
+                                                <td><input readOnly="true" type="text" className='form-control'  /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Car Model</th>
+                                                <td><input readOnly="true" type="text" className='form-control'  /></td>
+                                                <th>Car Year</th>
+                                                <td><input readOnly="true" type="text" className='form-control' /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Price Per KM</th>
+                                                <td><input readOnly="true" type="text" className='form-control'  /></td>
+                                                <th>Minimum KM per day</th>
+                                                <td><input readOnly="true" type="text" className='form-control' /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Driver Night Charges</th>
+                                                <td><input readOnly="true" type="text" className='form-control'  /></td>
+                                                <th>Vehicle Availability</th>
+                                                <td><Switch defaultChecked style={{ color: 'white', backgroundColor: 'green' }}  /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body d-flex justify-content-center">
-                                            <img className='  ' width={100} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/User_icon-cp.svg/1200px-User_icon-cp.svg.png' />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row  pt-5">
-                            <div class="col-sm-6 rounded  card-body ">
-                                <div class="d-flex justify-content-center ">
-                                    <div class=" ">
-                                        <p class=" pt-2 ">Vehicle Name</p>
-                                        <p class=" pt-2 ">Car Model</p>
-                                        <p class=" pt-2 ">Price Per KM</p>
-                                        <p class=" pt-2 ">Driver Night Charges</p>
-                                    </div>
-                                    <div class="px-5 ">
-                                        <p class=" pt-2">22/02/2022</p>
-                                        <p class="pt-2 ">Anand</p>
-                                        <p class=" pt-2">Varanasi</p>
-                                        <p class=" pt-2">589548496984</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 rounded  card-body">
-                                <div class="d-flex justify-content-center ">
-                                    <div class=" ">
-                                        <p class=" pt-2 ">Car Brand</p>
-                                        <p class=" pt-2 ">Car Year</p>
-                                        <p class=" pt-2 "> Minimum KM per day </p>
-                                        <p class=" pt-2 "> Vehicle Availability </p>
-                                    </div>
-                                    <div class="px-5 ">
-                                        <p class="pt-2 ">9898656522</p>
-                                        <p class=" pt-2">Anand"gmail.com</p>
-                                        <p class="pt-2 ">20</p>
-                                        <p class=" pt-2"><Switch defaultChecked style={{ color: 'white', backgroundColor: 'green' }} /></p>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+        </div>
         </>
     )
 }
