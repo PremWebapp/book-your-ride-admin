@@ -132,11 +132,11 @@ const handleChangeStatus = (event,id)=>{
             },
             render: (text, record) => (
                 <span><Link to="/Admin/user-management">
-                <i className="fa fa-eye p-2  rounded-circle " style={{ color: 'white', backgroundColor: 'black' }} id={record.id} ></i>
+                <i className="fa fa-eye p-2  rounded-circle bg-light " id={record.id} ></i>
                 </Link>
                     <span className="p-2  rounded-circle ">
-                        <Switch defaultChecked style={{ color: 'white', backgroundColor: 'black' }} id={record.id} onChange={(event) => handleChangeStatus(event,record.id)} />
-                    </span><i className="fa fa-trash p-2  rounded-circle " style={{ color: 'white', backgroundColor: 'black' }} id={record.id} onClick={MenuDelete}></i></span>
+                        <Switch defaultChecked id={record.id} onChange={(event) => handleChangeStatus(event,record.id)} />
+                    </span><i className="fa fa-trash p-2  rounded-circle  bg-light text-danger" id={record.id} onClick={MenuDelete}></i></span>
             )
         },
     ]

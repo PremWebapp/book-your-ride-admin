@@ -41,10 +41,10 @@ function MainContentDashbord() {
 
                     <div class="row pt-4 px-3">
                         <div class="col-sm-7">
-                            <div class="bg-info border py-2 ">
+                            <div class="bg-info border py-1 ">
                                 <div class="card-body d-flex justify-content-center border-bottom bg-white ">
                                     <div className=" text-center my-auto py-4">
-                                        <h4 class="card-text font-weight-bold text-danger">Total Number of Users</h4>
+                                        <h5 class="card-text font-weight-bold text-danger">Total Number of Users</h5>
                                         <h3>8056 k</h3>
                                     </div>
                                     <span className='mx-3 text-danger'>   <TiGroup size={90} /></span>
@@ -52,10 +52,10 @@ function MainContentDashbord() {
                             </div>
                         </div>
                         <div class="col-sm-5">
-                            <div class="bg-info border py-2">
+                            <div class="bg-info border py-1">
                                 <div class="card-body d-flex justify-content-center border-bottom bg-white">
                                     <div className="text-center my-auto py-4">
-                                        <h4 class="card-text font-weight-bold text-danger">Total number of service Provider</h4>
+                                        <h5 class="card-text font-weight-bold text-danger">Total number of service Provider</h5>
                                         <h3 >9056 k</h3>
                                     </div>
                                     <span className='mx-3 text-danger'> <AiFillCar size={90} /></span>
@@ -68,10 +68,10 @@ function MainContentDashbord() {
 
                     <div class="row  px-3">
                         <div class="col-sm-5">
-                            <div class="bg-info border py-2 ">
+                            <div class="bg-info border py-1 ">
                                 <div class="card-body d-flex justify-content-center border-bottom bg-white ">
                                     <div className=" text-center my-auto">
-                                        <h4 class="card-text font-weight-bold text-danger">Total Earning</h4>
+                                        <h5 class="card-text font-weight-bold text-danger">Total Earning</h5>
                                         <h3>8056 </h3>
                                     </div>
                                     <ReactApexChart options={datastate.options} series={datastate.series} type="pie" width={300} />
@@ -80,10 +80,10 @@ function MainContentDashbord() {
                             </div>
                         </div>
                         <div class="col-sm-7">
-                            <div class="bg-info border py-2">
+                            <div class="bg-info border py-1">
                                 <div class="card-body d-flex justify-content-center border-bottom bg-white">
                                     <div className="text-center my-auto">
-                                        <h4 class="card-text font-weight-bold text-danger">Total Booking Request</h4>
+                                        <h5 class="card-text font-weight-bold text-danger">Total Booking Request</h5>
                                         <h3 >8056 </h3>
                                     </div>
                                     <ReactApexChart options={datastate.options} series={datastate.series} type="pie" width={300} />
@@ -143,7 +143,7 @@ function MainContentDashbord() {
 
                     <div class="row  px-3">
                         <div class="col-sm-7">
-                            <div class="bg-info border py-2 ">
+                            <div class="bg-info border py-1 ">
                                 <div class="card-body d-flex justify-content-center border-bottom bg-white ">
                                    
                                     <ReactApexChart options={datastate.options} series={datastate.series} type="pie" width={300} />
@@ -153,7 +153,7 @@ function MainContentDashbord() {
                         </div>
 
                         <div class="col-sm-5">
-                            <div class="bg-info border py-2">
+                            <div class="bg-info border py-1">
                                 <div class="card-body  justify-content-center border-bottom bg-white py-3 px-4 ">
                                         <select class=" form-control my-3" aria-describedby="basic-addon1">
                                             <option value="volvo">Car Brand</option>

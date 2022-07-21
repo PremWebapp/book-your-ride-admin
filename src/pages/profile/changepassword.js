@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ResetPassword() {
     const data = JSON.parse(localStorage.getItem('user'));
@@ -13,7 +14,11 @@ function ResetPassword() {
 
                                 <div class="card-body">
                                     <div className='col-md-12 text-center'>
-                                        <img alt="profile_image" src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' width={'30%'} />
+                                    <LazyLoadImage
+                                            height={'20%'}
+                                            width={'20%'}
+                                            src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' // use normal <img> attributes as props
+                                            />
                                     </div>
                                 </div>
 

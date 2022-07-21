@@ -2,6 +2,7 @@ import React from 'react'
 import { Tabs} from 'antd'
 import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowBackIos } from "react-icons/md";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ServiceView() {
     let navigate = useNavigate();
@@ -27,7 +28,11 @@ function ServiceView() {
 
                                             <div class="card-body bg-white border-left border-right">
                                                 <div className='col-md-12 text-center'>
-                                                    <img alt="profile_image" src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' width={'30%'} />
+                                                <LazyLoadImage
+                                            height={'20%'}
+                                            width={'20%'}
+                                            src='https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png' // use normal <img> attributes as props
+                                            />
                                                 </div>
                                             </div>
 

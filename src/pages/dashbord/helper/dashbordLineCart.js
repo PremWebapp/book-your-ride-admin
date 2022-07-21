@@ -46,7 +46,7 @@ function DashbordLineCart() {
   return (
     <div className=' mx-3 py-5'>
       <div class=" bg-info px-2">
-        <div className=" py-2 mx-1">
+        <div className=" py-1 mx-1">
           <div class="row row-cols-1 row-cols-md-2 bg-white border shadow">
             <div class="col text-center">
               <div class="card-body mx-5" style={{ width: '72vw' }}>
