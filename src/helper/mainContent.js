@@ -4,8 +4,6 @@ import CategoryManagement from '../features/admin/category/CategoryManagement'
 import MainContentDashbord from '../pages/dashbord/MainContent'
 import CountryCityManagement from '../features/admin/countryCity/CountryCityManagement'
 import DishManagement from '../features/admin/dish/DishManagement'
-import DriverManagement from '../features/admin/driver/DriverManagement'
-import DriverDetailManagement from '../features/admin/driver/pages/DriverDetailManagement'
 import OrderManagement from '../features/admin/order/OrderManagement'
 import PaymentManagement from '../features/admin/payment/PaymentManagement'
 import PromoCodePage from '../features/admin/promo/pages/PromoCodePage'
@@ -45,8 +43,6 @@ export default function MainContent() {
           <Route exact path="/vahicle-view" element={< VahicleView />} />
           <Route exact path="/countryCity" element={< CountryCityManagement/>} />
           <Route exact path="/userMap" element={< UserMap/>} />
-          <Route exact path="/Driver" element={< DriverManagement/>} />
-          <Route exact path="/driverDetail/:id" element={< DriverDetailManagement/>} />
           <Route exact path="/profile" element={< ProfilePage />} />
           <Route exact path="/profile-edit" element={< EditProfilePage />} />
           <Route exact path="/profile-reset" element={< ResetPassword />} />

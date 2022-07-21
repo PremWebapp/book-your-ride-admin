@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
