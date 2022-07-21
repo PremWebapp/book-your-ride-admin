@@ -9,8 +9,6 @@ import PaymentManagement from '../features/admin/payment/PaymentManagement'
 import PromoCodePage from '../features/admin/promo/pages/PromoCodePage'
 import PromotionPage from '../features/admin/promo/pages/PromotionPage'
 import PromoManagement from '../features/admin/promo/PromoManagement'
-import UserManagement from '../features/admin/user/UserManagement'
-import UserMap from '../features/admin/user/UserMap'
 import Header from '../compnent/header/header'
 import ServicePage from '../pages/service/servicepage'
 import Setting from '../pages/setting/setting'
@@ -27,6 +25,7 @@ import ProfilePage from '../pages/profile/profile'
 import PaymentView from '../pages/payment/paymentview'
 import EditProfilePage from '../pages/profile/profileform'
 import ResetPassword from '../pages/profile/changepassword'
+import UserPage from '../pages/user/userpage'
 
 export default function MainContent() {
   return (
@@ -34,7 +33,7 @@ export default function MainContent() {
       <Header/>
         <Routes>
           <Route exact path="/" element={< MainContentDashbord/>} />
-          <Route exact path="/User" element={< UserManagement/>} />
+          <Route exact path="/User" element={< UserPage />} />
           <Route exact path="/user-management" element={< UserManagementView />} />
           <Route exact path="/Category" element={< CategoryManagement/>} />
           <Route exact path="/service" element={< ServicePage/>} />
@@ -42,7 +41,6 @@ export default function MainContent() {
           <Route exact path="/vahicle" element={< VahiclePage />} />
           <Route exact path="/vahicle-view" element={< VahicleView />} />
           <Route exact path="/countryCity" element={< CountryCityManagement/>} />
-          <Route exact path="/userMap" element={< UserMap/>} />
           <Route exact path="/profile" element={< ProfilePage />} />
           <Route exact path="/profile-edit" element={< EditProfilePage />} />
           <Route exact path="/profile-reset" element={< ResetPassword />} />
