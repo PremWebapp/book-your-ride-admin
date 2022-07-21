@@ -1,14 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import CategoryManagement from '../features/admin/category/CategoryManagement'
 import MainContentDashbord from '../pages/dashbord/MainContent'
-import CountryCityManagement from '../features/admin/countryCity/CountryCityManagement'
-import DishManagement from '../features/admin/dish/DishManagement'
-import OrderManagement from '../features/admin/order/OrderManagement'
-import PaymentManagement from '../features/admin/payment/PaymentManagement'
-import PromoCodePage from '../features/admin/promo/pages/PromoCodePage'
-import PromotionPage from '../features/admin/promo/pages/PromotionPage'
-import PromoManagement from '../features/admin/promo/PromoManagement'
 import Header from '../compnent/header/header'
 import ServicePage from '../pages/service/servicepage'
 import Setting from '../pages/setting/setting'
@@ -26,6 +18,8 @@ import PaymentView from '../pages/payment/paymentview'
 import EditProfilePage from '../pages/profile/profileform'
 import ResetPassword from '../pages/profile/changepassword'
 import UserPage from '../pages/user/userpage'
+import PaymentPage from '../pages/payment/PaymentPage'
+import OrderPage from '../pages/booking/OrderPage'
 
 export default function MainContent() {
   return (
@@ -35,22 +29,16 @@ export default function MainContent() {
           <Route exact path="/" element={< MainContentDashbord/>} />
           <Route exact path="/User" element={< UserPage />} />
           <Route exact path="/user-management" element={< UserManagementView />} />
-          <Route exact path="/Category" element={< CategoryManagement/>} />
           <Route exact path="/service" element={< ServicePage/>} />
           <Route exact path="/service-view" element={< ServiceView/>} />
           <Route exact path="/vahicle" element={< VahiclePage />} />
           <Route exact path="/vahicle-view" element={< VahicleView />} />
-          <Route exact path="/countryCity" element={< CountryCityManagement/>} />
           <Route exact path="/profile" element={< ProfilePage />} />
           <Route exact path="/profile-edit" element={< EditProfilePage />} />
           <Route exact path="/profile-reset" element={< ResetPassword />} />
-          <Route exact path="/Dish" element={< DishManagement/>} />
-          <Route exact path="/Promo" element={< PromoManagement/>} />
-          <Route exact path="/Promo/Code" element={< PromoCodePage/>} />
-          <Route exact path="/Promo/Promotion" element={< PromotionPage/>} />
-          <Route exact path="/booking" element={< OrderManagement/>} />
+          <Route exact path="/booking" element={< OrderPage/>} />
           <Route exact path="/booking-view" element={< BookingView/>} />
-          <Route exact path="/Payment" element={< PaymentManagement/>} />
+          <Route exact path="/Payment" element={< PaymentPage />} />
           <Route exact path="/payment-view" element={< PaymentView/>} />
           <Route exact path="/setting" element={< Setting/>} />
           <Route exact path="/rating" element={< ReatingPage />} />
@@ -58,7 +46,6 @@ export default function MainContent() {
           <Route exact path="/report" element={< ReportPage />} />
           <Route exact path="/notification" element={< NotificationPage />} />
         </Routes>
-        {/* <Footer/> */}
     </div>
   )
 }
