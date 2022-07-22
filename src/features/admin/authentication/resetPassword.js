@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Form, Input, Checkbox, Row,Button, Col, message } from "antd";
 import styles from "./Login.module.css";
 import SushiyaLogoDark from '../img/sushiya_logo_dark.png'
-import { FcUnlock } from "react-icons/fc";
+import { AiFillUnlock } from "react-icons/ai";
 import { MdAttachEmail } from "react-icons/md";
 import ImgCard from './helper/imgCard';
 
@@ -33,7 +33,7 @@ function ResetPasswod() {
                             
                             <div className='d-flex mb-4 '>
                                 <div className={`py-5 ${styles.loginLableBg}`}></div>
-                                <h5 className='px-5 my-auto'>Reset Password</h5>
+                                <h5 className='px-5 my-auto text-danger'>Reset Password</h5>
                             </div>
 
                             <Form
@@ -49,7 +49,7 @@ function ResetPasswod() {
 
                                 <Form.Item
                                 className='mt-3 '
-                                    label={<FcUnlock style={{paddingTop: 10, paddingBottom: 10}} size={60}/>}
+                                    label={<AiFillUnlock color='red' style={{paddingTop: 10, paddingBottom: 10}} size={60}/>}
                                     name="password"
                                     rules={[
                                         { required: true, message: "Please input your password!" },
@@ -63,7 +63,7 @@ function ResetPasswod() {
 
                                 <Form.Item
                                 className='mt-5 '
-                                    label={<FcUnlock style={{paddingTop: 10, paddingBottom: 10}} size={60}/>}
+                                    label={<AiFillUnlock color='red' style={{paddingTop: 10, paddingBottom: 10}} size={60}/>}
                                     name="password"
                                     rules={[
                                         { required: true, message: "Please input your password!" },

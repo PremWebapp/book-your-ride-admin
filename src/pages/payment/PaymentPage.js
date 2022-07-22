@@ -87,7 +87,7 @@ function PaymentPage() {
     ]
     return (
         <>
-            <div id="content-wrapper" className="d-flex flex-column py-3">
+            <div id="content-wrapper" className="d-flex flex-column">
                 <div id="content">
                 <div className="card-container">
                     <div className="container-fluid ">

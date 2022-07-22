@@ -159,7 +159,7 @@ function UserPage() {
 
     return (
         <>
-            <div id="content-wrapper" className="d-flex flex-column py-3">
+            <div id="content-wrapper" className="d-flex flex-column ">
                 <div id="content">
                     <Modal
                         // title="Are you sure, you want to

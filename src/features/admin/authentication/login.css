@@ -72,7 +72,7 @@ body1 {
     box-shadow: none;
     border-bottom: 2px solid #0DB8DE;
     outline: 0;
-    background-color: #1A2226;
+    background-color: #c73232;
     color: #ECF0F5;
 }
 
@@ -127,6 +127,6 @@ label {
 }
 
 .ant-checkbox-checked .ant-checkbox-inner {
-    background-color: #d111cb73 !important;
-    border-color: #d111cb73 !important;
+    background-color: red !important;
+    border-color: red !important;
 }

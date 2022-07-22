@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
 import './login.css'
-import { Form, Input, Checkbox, Row, Button, Col, message } from "antd";
+import { Form, Input, Row, Col } from "antd";
 import styles from "./Login.module.css";
 import SushiyaLogoDark from '../img/sushiya_logo_dark.png'
 import { MdAttachEmail } from "react-icons/md";
 import ImgCard from './helper/imgCard';
+
 function ForgatePasswod() {
     const onFinishFailed = (errorInfo) => {
         console.log("Failed:", errorInfo);
@@ -28,11 +28,11 @@ function ForgatePasswod() {
 
                             <div className='d-flex mb-4 '>
                                 <div className={`py-5 ${styles.loginLableBg}`}></div>
-                                <h5 className='px-5 my-auto'>Forgate Password</h5>
+                                <h5 className='px-5 my-auto text-danger'>Forgate Password</h5>
                             </div>
 
                             <div className='px-4'>
-                                <p className='px-5 pb-5'>Enter your Email-ID here:</p>
+                                <p className='px-5 pb-5 text-danger'>Enter your Email-ID here:</p>
                             </div>
 
                             <Form
@@ -44,7 +44,7 @@ function ForgatePasswod() {
                                 onFinishFailed={onFinishFailed}
                             // autoComplete="off"
                             >
-                                <Form.Item label={<MdAttachEmail color='rgb(225 134 20)' style={{ paddingTop: 10, paddingBottom: 10 }} size={60} />}
+                                <Form.Item label={<MdAttachEmail color='red' style={{ paddingTop: 10, paddingBottom: 10 }} size={60} />}
                                     name="mobile"
                                     rules={[
                                         { required: true, message: "Please input your username!" },
