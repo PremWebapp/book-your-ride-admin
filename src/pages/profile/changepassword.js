@@ -40,7 +40,7 @@ function ResetPassword() {
 
                                 </div>
                                 <div className='card-footer'>
-                                    <div className='col-md-12  text-center'>
+                                    <div className='col-md-12  text-center '>
                                         <button className='button_default px-5'>Save</button>
                                     </div>
                                 </div>

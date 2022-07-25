@@ -88,7 +88,7 @@ function ReatingPage() {
                 multiple: 3,
             },
             render: (text, record) => (
-                <span> <Rate allowHalf disabled  defaultValue={2.5} /></span>
+                <span> <Rate allowHalf className="text-danger" disabled  defaultValue={2.5} /></span>
             )
         },
        

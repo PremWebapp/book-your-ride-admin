@@ -39,7 +39,7 @@ label{
 }
 
 .ant-tabs-tab .ant-tabs-tab-btn:hover{
-    color:orange !important;
+    color:rgb(255, 0, 0) !important;
 }
 
 .ant-tabs-tab-active .ant-tabs-tab-btn:hover{

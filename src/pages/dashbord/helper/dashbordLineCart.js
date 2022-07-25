@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactApexChart from 'react-apexcharts'
+import style from '../dashbord.module.css'
 
 function DashbordLineCart() {
   const datastate = {
-
     series: [{
       name: "Data1",
       data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
@@ -29,7 +29,7 @@ function DashbordLineCart() {
       title: {
         text: 'Product Trends by Month',
         align: 'left',
-        colors:['#dc3545']
+        colors: ['#e74a3b']
       },
       grid: {
         row: {
@@ -44,10 +44,10 @@ function DashbordLineCart() {
 
   }
   return (
-    <div className=' mx-3 py-5'>
-      <div class=" bg-info px-2">
-        <div className=" py-1 mx-1">
-          <div class="row row-cols-1 row-cols-md-2 bg-white border shadow">
+    <div className=' mx-3 py-4'>
+      <div class=" bg-dark px-2">
+        <div className={`mx-1 ${style.cardPadding} shadow`}>
+          <div class="row row-cols-1 row-cols-md-2 bg-white  shadow-sm ">
             <div class="col text-center">
               <div class="card-body mx-5" style={{ width: '72vw' }}>
                 <ReactApexChart options={datastate.options} series={datastate.series} type="line" height={350} />

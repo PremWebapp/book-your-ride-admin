@@ -16,7 +16,7 @@ function Setting() {
                         <div className='row '>
                             <div className='col-md-12 ' >
                                 <div class="card">
-                                    <div className='card-header bold'>SETTING</div>
+                                    <div className='card-header bold '>SETTING</div>
 
                                    <div className='px-2'>
                                    <SettingCard />

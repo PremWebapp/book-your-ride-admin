@@ -80,7 +80,7 @@ function UserManagementView() {
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-lg-4 col-sm-12 text-center pt-4">
-                                        <h5 className="font-weight-bold">
+                                        <h5 className="font-weight-bold table">
                                             User Stats
                                         </h5>
                                     </div>
@@ -94,14 +94,14 @@ function UserManagementView() {
 
                                     <div className="col-md-6 col-lg-6 col-sm-12 ">
                                         <div>
-                                            <h5 className="font-weight-bold">Upcoming Booking 1</h5>
-                                            <h6 className="">Upcoming Booking 1</h6>
+                                            <h5 className="font-weight-bold table">Upcoming Booking 1</h5>
+                                            <h6 className="table">Upcoming Booking 1</h6>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-lg-6 col-sm-12 ">
                                         <div>
-                                            <h5 className="font-weight-bold">Upcoming Booking 2</h5>
-                                            <h6 className="">Upcoming Booking 2</h6>
+                                            <h5 className="font-weight-bold table">Upcoming Booking 2</h5>
+                                            <h6 className="table">Upcoming Booking 2</h6>
                                         </div>
                                     </div>
                                 </div>
